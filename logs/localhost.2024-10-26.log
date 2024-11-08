@@ -1,0 +1,345 @@
+26-Oct-2024 02:13:12.571 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Oct-2024 02:13:12.571 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Oct-2024 02:13:12.573 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@26f7cdf8')
+26-Oct-2024 02:14:25.887 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [/index.jsp] at line [76]
+
+73:             <tbody>
+74:                 <% 
+75:                     Class.forName("org.mariadb.jdbc.Driver");
+76:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+77: 
+78:                     Statement stmt = conn.createStatement();
+79:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:335)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:116)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:129)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:194)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Oct-2024 02:14:52.102 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [/index.jsp] at line [76]
+
+73:             <tbody>
+74:                 <% 
+75:                     Class.forName("org.mariadb.jdbc.Driver");
+76:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+77: 
+78:                     Statement stmt = conn.createStatement();
+79:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:335)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:116)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:129)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:194)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Oct-2024 02:15:14.594 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [/index.jsp] at line [76]
+
+73:             <tbody>
+74:                 <% 
+75:                     Class.forName("org.mariadb.jdbc.Driver");
+76:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+77: 
+78:                     Statement stmt = conn.createStatement();
+79:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:335)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:116)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:129)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:194)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Oct-2024 02:15:32.307 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Oct-2024 02:15:32.307 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+26-Oct-2024 02:15:36.473 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Oct-2024 02:15:36.473 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Oct-2024 02:15:36.475 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@23202c31')
+26-Oct-2024 02:15:37.210 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [index.jsp] at line [76]
+
+73:             <tbody>
+74:                 <% 
+75:                     Class.forName("org.mariadb.jdbc.Driver");
+76:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+77: 
+78:                     Statement stmt = conn.createStatement();
+79:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:335)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:116)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:129)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:194)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Oct-2024 02:18:22.936 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [index.jsp] at line [76]
+
+73:             <tbody>
+74:                 <% 
+75:                     Class.forName("org.mariadb.jdbc.Driver");
+76:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+77: 
+78:                     Statement stmt = conn.createStatement();
+79:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:335)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:116)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:129)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:194)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Oct-2024 02:18:24.409 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [index.jsp] at line [76]
+
+73:             <tbody>
+74:                 <% 
+75:                     Class.forName("org.mariadb.jdbc.Driver");
+76:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+77: 
+78:                     Statement stmt = conn.createStatement();
+79:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.net.ConnectException: Connection refused
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:335)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:116)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:129)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:194)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Oct-2024 02:19:34.066 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Oct-2024 02:19:34.066 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+26-Oct-2024 02:28:12.863 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Oct-2024 02:28:12.863 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Oct-2024 02:28:12.865 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@238acd0b')
+26-Oct-2024 02:29:35.865 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Oct-2024 02:29:35.865 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

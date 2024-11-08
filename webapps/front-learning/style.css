@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('beijing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.form-background {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; 
+    color: #333;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+    outline: none;
+    font-weight: bold;
+}
+	
+
+input#username:valid {
+    border-color: #32cd32; /* 输入有效时变成绿色边框 */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #357abd;
+}
+

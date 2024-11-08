@@ -1,0 +1,17 @@
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples HTTP/1.1" 302 -
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples/ HTTP/1.1" 200 3111
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples/OIP.jpeg HTTP/1.1" 200 53769
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples/looknight.mp3 HTTP/1.1" 206 945561
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples/bg.png HTTP/1.1" 200 1473942
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples/looknight.mp3 HTTP/1.1" 206 945561
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /examples/looknight.mp3 HTTP/1.1" 200 945561
+127.0.0.1 - - [07/Nov/2024:13:05:14 +0000] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [07/Nov/2024:13:05:21 +0000] "GET /examples/poem_info.html HTTP/1.1" 200 1687
+127.0.0.1 - - [07/Nov/2024:13:05:22 +0000] "GET /examples/index.html HTTP/1.1" 200 3111
+127.0.0.1 - - [07/Nov/2024:13:05:22 +0000] "GET /examples/looknight.mp3 HTTP/1.1" 206 945561
+127.0.0.1 - - [07/Nov/2024:13:05:22 +0000] "GET /examples/looknight.mp3 HTTP/1.1" 206 945561
+127.0.0.1 - - [07/Nov/2024:13:13:24 +0000] "GET /front-learning HTTP/1.1" 302 -
+127.0.0.1 - - [07/Nov/2024:13:13:24 +0000] "GET /front-learning/ HTTP/1.1" 200 1029
+127.0.0.1 - - [07/Nov/2024:13:13:24 +0000] "GET /front-learning/style.css HTTP/1.1" 200 1496
+127.0.0.1 - - [07/Nov/2024:13:13:24 +0000] "GET /front-learning/logo.png HTTP/1.1" 200 3767091
+127.0.0.1 - - [07/Nov/2024:13:13:24 +0000] "GET /front-learning/beijing.jpg HTTP/1.1" 200 417311

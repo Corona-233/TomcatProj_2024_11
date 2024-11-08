@@ -1,0 +1,833 @@
+25-Oct-2024 03:43:55.149 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2024 03:43:55.149 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2024 03:43:55.151 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6ebd78d1')
+25-Oct-2024 03:45:09.067 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2024 03:45:09.067 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+25-Oct-2024 03:46:38.603 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2024 03:46:38.603 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2024 03:46:38.605 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3aaf4f07')
+25-Oct-2024 03:48:29.912 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2024 03:48:29.912 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2024 03:48:29.913 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@54e7391d')
+25-Oct-2024 03:48:30.008 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2024 03:48:30.008 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+25-Oct-2024 03:48:45.002 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2024 03:48:45.002 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+25-Oct-2024 06:53:08.470 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2024 06:53:08.471 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2024 06:53:08.475 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@24361cfc')
+25-Oct-2024 07:16:36.558 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 07:17:35.409 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 07:20:35.760 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 07:20:44.054 SEVERE [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Connection cannot be resolved to a type
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+DriverManager cannot be resolved
+33:                 <% 
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Statement cannot be resolved to a type
+34:                     // 数据库连接代码示例
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+
+
+An error occurred at line: [38] in the jsp file: [/index.jsp]
+ResultSet cannot be resolved to a type
+35:                     Class.forName("org.mariadb.jdbc.Driver");
+36:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db", "root", "123456");
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+39:                     
+40:                     while (rs.next()) {
+41:                         String studentId = rs.getString("studentId");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 07:31:23.539 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [/index.jsp] at line [39]
+
+36:                     Statement stmt = conn.createStatement();
+37:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+38:                     while (rs.next()) {
+39:                         String studentId = rs.getString("studentId");
+40:                         String name = rs.getString("name");
+41:                         String major = rs.getString("major");
+42:                 %>
+
+
+Stacktrace:] with root cause
+	java.sql.SQLException: Unknown label 'studentId'. Possible value [students.id, student_number, major, name, students.major, id, students.name, students.student_number]
+		at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1749)
+		at org.mariadb.jdbc.client.result.Result.getString(Result.java:687)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 07:44:50.655 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [/index.jsp] at line [35]
+
+32:             <tbody>
+33:                 <% 
+34:                     Class.forName("org.mariadb.jdbc.Driver");
+35:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb", "root", "123456");
+36:                     Statement stmt = conn.createStatement();
+37:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+38:                     while (rs.next()) {
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: (conn=48) Unknown database 'studentdb'
+		at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+		at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+		at org.mariadb.jdbc.client.impl.StandardClient.authenticationHandler(StandardClient.java:306)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:226)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:153)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 07:51:37.270 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2024 07:51:37.271 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+25-Oct-2024 07:52:12.573 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2024 07:52:12.573 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2024 07:52:12.575 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2f2d52ef')
+25-Oct-2024 08:00:43.289 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [An exception occurred processing [/index.jsp] at line [35]
+
+32:             <tbody>
+33:                 <% 
+34:                     Class.forName("org.mariadb.jdbc.Driver");
+35:                     Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/studentdb?characterEncoding=UTF-8", "root", "123456");
+36: 
+37:                     Statement stmt = conn.createStatement();
+38:                     ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+
+
+Stacktrace:] with root cause
+	java.sql.SQLSyntaxErrorException: (conn=105) Unknown database 'studentdb'
+		at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+		at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+		at org.mariadb.jdbc.client.impl.StandardClient.authenticationHandler(StandardClient.java:306)
+		at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:226)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+		at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:153)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 08:08:13.773 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/student-management] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [87] in the jsp file: [/index.jsp]
+studentId cannot be resolved to a variable
+84: 			}
+85:                 %>
+86:                 <tr>
+87:                     <td><%= studentId %></td>
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+
+
+An error occurred at line: [88] in the jsp file: [/index.jsp]
+name cannot be resolved to a variable
+85:                 %>
+86:                 <tr>
+87:                     <td><%= studentId %></td>
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+
+
+An error occurred at line: [89] in the jsp file: [/index.jsp]
+major cannot be resolved to a variable
+86:                 <tr>
+87:                     <td><%= studentId %></td>
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+92:                         <a href="delete_student.jsp?student_number=<%= studentId %>" class="button" onclick="return confirm('确认删除？')">删除</a>
+
+
+An error occurred at line: [91] in the jsp file: [/index.jsp]
+studentId cannot be resolved to a variable
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+92:                         <a href="delete_student.jsp?student_number=<%= studentId %>" class="button" onclick="return confirm('确认删除？')">删除</a>
+93:                     </td>
+94:                 </tr>
+
+
+An error occurred at line: [92] in the jsp file: [/index.jsp]
+studentId cannot be resolved to a variable
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+92:                         <a href="delete_student.jsp?student_number=<%= studentId %>" class="button" onclick="return confirm('确认删除？')">删除</a>
+93:                     </td>
+94:                 </tr>
+95:                 <% 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [87] in the jsp file: [/index.jsp]
+studentId cannot be resolved to a variable
+84: 			}
+85:                 %>
+86:                 <tr>
+87:                     <td><%= studentId %></td>
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+
+
+An error occurred at line: [88] in the jsp file: [/index.jsp]
+name cannot be resolved to a variable
+85:                 %>
+86:                 <tr>
+87:                     <td><%= studentId %></td>
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+
+
+An error occurred at line: [89] in the jsp file: [/index.jsp]
+major cannot be resolved to a variable
+86:                 <tr>
+87:                     <td><%= studentId %></td>
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+92:                         <a href="delete_student.jsp?student_number=<%= studentId %>" class="button" onclick="return confirm('确认删除？')">删除</a>
+
+
+An error occurred at line: [91] in the jsp file: [/index.jsp]
+studentId cannot be resolved to a variable
+88:                     <td><%= name %></td>
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+92:                         <a href="delete_student.jsp?student_number=<%= studentId %>" class="button" onclick="return confirm('确认删除？')">删除</a>
+93:                     </td>
+94:                 </tr>
+
+
+An error occurred at line: [92] in the jsp file: [/index.jsp]
+studentId cannot be resolved to a variable
+89:                     <td><%= major %></td>
+90:                     <td>
+91:                         <a href="edit.jsp?student_number=<%= studentId %>" class="button">编辑</a>
+92:                         <a href="delete_student.jsp?student_number=<%= studentId %>" class="button" onclick="return confirm('确认删除？')">删除</a>
+93:                     </td>
+94:                 </tr>
+95:                 <% 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+25-Oct-2024 08:49:36.106 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2024 08:49:36.106 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+25-Oct-2024 08:49:41.319 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2024 08:49:41.319 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2024 08:49:41.321 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6f9ad11c')
+25-Oct-2024 08:59:44.154 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2024 08:59:44.154 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
