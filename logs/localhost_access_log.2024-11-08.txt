@@ -44,3 +44,14 @@
 127.0.0.1 - - [08/Nov/2024:01:56:04 +0000] "GET /student-management/enter.jsp HTTP/1.1" 200 2025
 127.0.0.1 - - [08/Nov/2024:01:56:32 +0000] "GET /student-management/enter.jsp HTTP/1.1" 200 2010
 127.0.0.1 - - [08/Nov/2024:01:56:40 +0000] "GET /student-management/index.jsp HTTP/1.1" 200 3624
+127.0.0.1 - - [08/Nov/2024:06:45:45 +0000] "GET /front-learning HTTP/1.1" 302 -
+127.0.0.1 - - [08/Nov/2024:06:45:45 +0000] "GET /front-learning/ HTTP/1.1" 200 1029
+127.0.0.1 - - [08/Nov/2024:06:45:45 +0000] "GET /front-learning/style.css HTTP/1.1" 200 1496
+127.0.0.1 - - [08/Nov/2024:06:45:45 +0000] "GET /front-learning/logo.png HTTP/1.1" 200 3767091
+127.0.0.1 - - [08/Nov/2024:06:45:45 +0000] "GET /front-learning/beijing.jpg HTTP/1.1" 200 417311
+127.0.0.1 - - [08/Nov/2024:06:45:53 +0000] "GET /student-management/ HTTP/1.1" 200 3624
+127.0.0.1 - - [08/Nov/2024:06:45:56 +0000] "GET /student-management/add.jsp HTTP/1.1" 200 1784
+127.0.0.1 - - [08/Nov/2024:06:45:58 +0000] "GET /student-management/index.jsp HTTP/1.1" 200 3624
+127.0.0.1 - - [08/Nov/2024:06:46:04 +0000] "GET /student-management/add.jsp HTTP/1.1" 200 1784
+127.0.0.1 - - [08/Nov/2024:06:47:35 +0000] "POST /student-management/add_student.jsp HTTP/1.1" 302 -
+127.0.0.1 - - [08/Nov/2024:06:47:35 +0000] "GET /student-management/index.jsp HTTP/1.1" 200 4089
