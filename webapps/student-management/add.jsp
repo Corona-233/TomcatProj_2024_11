@@ -6,50 +6,49 @@
     <meta charset="UTF-8">
     <title>添加学生</title>
     <style>
-        body { 
-		font-family: Arial, sans-serif; 
-		background-color: #f4f4f4; 
-		padding: 20px; 
-	}
-        
-	.container { 
-		max-width: 500px; 
-		margin: 0 auto; 
-		background: white; 
-		padding: 20px; 
-		border-radius: 8px; 
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-	}
-        
-	h2 { 
-		color: #333; 
-	}
-        
-	.button { 
-		padding: 8px 12px; 
-		background-color: #007bff; 
-		color: white; 
-		text-decoration: none; 
-		border-radius: 5px; 
-		display: inline-block; 
-		margin: 10px 0; 
-	}
-        
-	.button:hover { 
-		background-color: #0056b3; 
-	}
-        
-	input[type="text"] { 
-		width: 96%; 
-		padding: 8px; 
-		margin: 10px 0; 
-	}
+        body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+        }
 
-	select {
-                width: 100%;
+        .container {
+                max-width: 500px;
+                margin: 0 auto;
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+                color: #333;
+        }
+
+        .button {
+                padding: 8px 12px;
+                background-color: #007bff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin: 10px 0;
+        }
+
+        .button:hover {
+                background-color: #0056b3;
+        }
+
+        input[type="text"] {
+                width: 96%;
                 padding: 8px;
                 margin: 10px 0;
         }
+
+        select {
+                width: 100%;
+                padding: 8px;
+                margin: 10px 0;}
     </style>
 </head>
 <body>
@@ -73,4 +72,3 @@
 </body>
 
 </html>
-

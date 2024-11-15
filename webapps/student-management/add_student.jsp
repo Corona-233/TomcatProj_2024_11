@@ -24,4 +24,3 @@
         out.println("<script>alert('添加失败：" + e.getMessage() + "'); window.location='add.jsp';</script>");
     }
 %>
-

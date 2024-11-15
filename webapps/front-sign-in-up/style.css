@@ -55,8 +55,8 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 	
 
-input#username:valid {
-    border-color: #32cd32; /* 输入有效时变成绿色边框 */
+input#username:enabled {
+    border-color: #32cd32;
 }
 
 button {

@@ -8,9 +8,9 @@
     try {
         Class.forName("org.mariadb.jdbc.Driver");
         Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
-        
-	String sql = "UPDATE students SET name=?, major=? WHERE student_number=?";
-	PreparedStatement stmt = conn.prepareStatement(sql);
+
+        String sql = "UPDATE students SET name=?, major=? WHERE student_number=?";
+        PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, name);
         stmt.setString(2, major);
         stmt.setString(3, studentId);
@@ -29,4 +29,3 @@
         out.println("<script>alert('更新失败：" + e.getMessage() + "'); window.location='edit.jsp?student_number=" + studentId + "';</script>");
     }
 %>
-

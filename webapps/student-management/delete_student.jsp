@@ -6,9 +6,9 @@
     if (studentId != null && !studentId.isEmpty()) {
         try {
             Class.forName("org.mariadb.jdbc.Driver");
-	    Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
-            
-	    String sql = "DELETE FROM students WHERE student_number=?";
+            Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/student_db?characterEncoding=UTF-8", "root", "123456");
+
+            String sql = "DELETE FROM students WHERE student_number=?";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, studentId);
 
@@ -24,4 +24,3 @@
         response.sendRedirect("index.jsp");
     }
 %>
-
