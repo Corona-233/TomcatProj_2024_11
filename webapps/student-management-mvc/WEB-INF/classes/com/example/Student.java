@@ -13,7 +13,6 @@ public class Student {
         this.major = major;
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }
