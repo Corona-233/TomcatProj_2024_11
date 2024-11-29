@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: red;
+        }
+        input {
+            margin: 10px 0;
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 5px 15px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>猜数游戏</h1>
+    <p>请输入一个 0-100 之间的随机整数：</p>
+    <input type="number" id="guessInput" placeholder="输入数字" min="0" max="100">
+    <button id="submitBtn">提交</button>
+    <button id="startBtn">开始</button>
+    <p>结果：<span id="result"></span></p>
+    <p>当前还可以猜测次数：<span id="remainingAttempts">10</span></p>
+    <script>
+        let randomNumber;
+        let attempts = 10;
+
+        function resetGame() {
+            randomNumber = Math.floor(Math.random() * 101);
+            attempts = 10;
+            document.getElementById('result').innerText = '';
+            document.getElementById('remainingAttempts').innerText = attempts;
+            document.getElementById('guessInput').value = '';
+            alert("游戏开始！请猜一个 0-100 之间的数字！");
+        }
+
+        document.getElementById('startBtn').addEventListener('click', resetGame);
+
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            if (attempts === 0) {
+                alert("游戏结束，请点击“开始”重新开始！");
+                return;
+            }
+
+            const userGuess = parseInt(document.getElementById('guessInput').value);
+            if (isNaN(userGuess) || userGuess < 0 || userGuess > 100) {
+                alert("请输入一个有效的数字（0-100之间）！");
+                return;
+            }
+
+            attempts--;
+            document.getElementById('remainingAttempts').innerText = attempts;
+
+            if (userGuess === randomNumber) {
+                document.getElementById('result').innerText = "恭喜你，猜对了！";
+                alert("你赢了！点击“开始”重新开始！");
+            } else if (userGuess > randomNumber) {
+                document.getElementById('result').innerText = "太大了！";
+            } else {
+                document.getElementById('result').innerText = "太小了！";
+            }
+
+            if (attempts === 0 && userGuess !== randomNumber) {
+                document.getElementById('result').innerText = `游戏结束，正确答案是 ${randomNumber}。`;
+            }
+        });
+
+        // 初始化游戏
+        resetGame();
+    </script>
+</body>
+<footer>
+    &copy; 202258503234 薛岩松
+</footer>
+
+
+</html>
+
