@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS简单应用</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+        }
+
+        form,
+        table {
+            width: 300px;
+            max-width: 480px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 280px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            background-color: gray;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        th {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="userInfoForm">
+	    <label for="username">User:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label>Gender:</label>
+        <div style="display: inline-flex;">
+            <input type="radio" id="male" name="gender" value="man">
+            <label for="male">man</label>
+            <input type="radio" id="female" name="gender" value="woman">
+            <label for="female">woman</label>
+        </div><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" required><br>
+
+        <label for="job">Major:</label>
+        <input type="text" id="job" name="job" required><br>
+
+        <div class="button-group">
+		<button type="button" onclick="saveUserInfo()">Save</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    </form>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Major</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script>
+        function saveUserInfo() {
+            const form = document.getElementById('userInfoForm');
+            const tableBody = document.getElementById('userTable').getElementsByTagName('tbody')[0];
+            const row = tableBody.insertRow();
+
+            ['username', 'name', 'gender', 'age', 'job'].forEach(fieldName => {
+                const cell = row.insertCell();
+                cell.textContent = form.elements[fieldName].value;
+            });
+
+            form.reset();
+        }
+    </script>
+</body>
+
+</html>
