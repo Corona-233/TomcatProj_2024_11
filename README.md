@@ -2,4 +2,4 @@
 
 仅使用了基础的HTML与CSS，数据库使用MariaDB，适合初步学习使用(*^▽^*)
 
-具体项目文件可到webapps目录下查看，谢谢～！
+具体项目文件可到webapps[webapps](./webapps/)目录下查看，谢谢～！
